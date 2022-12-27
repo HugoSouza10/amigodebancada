@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model ordem_servico {
+  id         Int     @id @unique(map: "sqlite_autoindex_ordem_servico_1") @default(autoincrement())
+  os         String
+  marca      String
+  modelo     String
+  cor        String
+  preco      Float
+  dt_entrega String
+  hr_entrega String
+  status     Int
+  id_servico Int
+  servico    servico @relation(fields: [id_servico], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model servico {
+  id            Int             @id @unique(map: "sqlite_autoindex_servico_1") @default(autoincrement())
+  nome          String
+  ordem_servico ordem_servico[]
+}
