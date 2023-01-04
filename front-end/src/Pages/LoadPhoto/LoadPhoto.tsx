@@ -1,6 +1,5 @@
 import iconUserMan from '../../Img/icon-user-man.png';
 
-
 export const LoadPhoto = () => {
     return (
         <>
