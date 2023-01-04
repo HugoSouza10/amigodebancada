@@ -18,12 +18,12 @@ export const Login = () => {
                 </h4>
                 </div>
                 <div className="flex flex-col py-6 px-8 space-y-5 bg-white">
-                <h2 className="text-black text-center text-xs uppercase">Olá, tudo bem? 😀</h2>
-                <label>Empresa: 🏭 </label>
-                <input type="text" placeholder="Empresa" className="px-2 py-2 border-2 rounded-md border-gray-200 focus:outline-none focus:border-orange-500 ease-in duration-300" />
-                <label>Senha: 🔒</label>
-                <input type="password" placeholder="Senha" className="px-2 py-2 border-2 rounded-md border-gray-200 focus:outline-none focus:border-orange-500 ease-in duration-300" />
-                <button onClick={handdleHome} className="w-full py-3 bg-gradient-to-tr from-orange-500 to-red-600 text-white rounded-full text-sm focus:outline-none focus:border-transparent shadow-lg">Login </button>
+                    <h2 className="text-black text-center text-xs uppercase">Olá, tudo bem? 😀</h2>
+                    <label>Empresa: 🏭 </label>
+                    <input type="text" placeholder="Empresa" className="px-2 py-2 border-2 rounded-md border-gray-200 focus:outline-none focus:border-orange-500 ease-in duration-300" />
+                    <label>Senha: 🔒</label>
+                    <input type="password" placeholder="Senha" className="px-2 py-2 border-2 rounded-md border-gray-200 focus:outline-none focus:border-orange-500 ease-in duration-300" />
+                    <button onClick={handdleHome} className="w-full py-3 bg-gradient-to-tr from-orange-500 to-red-600 text-white rounded-full text-sm focus:outline-none focus:border-transparent shadow-lg">Login </button>
                 </div>
             </div>
         </div>
